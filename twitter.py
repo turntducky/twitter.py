@@ -28,7 +28,10 @@ def tweetthis(type):
 		except Exception as e:
 			print(e)
 			return
-    elif type == "pic": #make sure that the path is in the folder of this file or a folder in the folder. Example: if you have this on your desktop and the pic is also on your desktop then just put the pic name with the extension (example.png) if its in a folder on your desktop then put the path as the folder name / pic name with extansion (examplepic/example.png)
+    elif type == "pic":
+	#make sure that the path is in the folder of this file or a folder in the folder.
+	#Example: if you have this on your desktop and the pic is also on your desktop then just put the pic name with the extension (example.png)
+	#if its in a folder on your desktop then put the path as the folder name / pic name with extansion (examplepic/example.png)
 		print("Enter pic path "+user.name)
 		pic = os.path.abspath(input())
 		print("Enter status "+user.name)
